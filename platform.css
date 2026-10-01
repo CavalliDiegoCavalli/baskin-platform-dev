@@ -174,3 +174,8 @@ a.btn.primary{color:var(--surface)}
 .cloud.ok{background:var(--ok-soft);color:var(--ink)}.cloud.ok svg{color:var(--ok)}
 .cloud.bad{background:var(--warn-soft)}.cloud.bad span{flex:1}
 .spin.sm{width:18px;height:18px;border-width:3px;flex:none}
+
+/* ---------- tastiera aperta: spazio sotto ai contenuti, così il campo in modifica sta sopra la tastiera ---------- */
+:root{--kb:0px}
+.pane-body{margin-bottom:var(--kb)}   /* l'area che scorre finisce sopra la tastiera (la barra in fondo resta sotto la tastiera) */
+.page .wrap{padding-bottom:calc(36px + var(--kb))}
