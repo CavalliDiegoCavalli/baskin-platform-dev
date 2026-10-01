@@ -1,0 +1,31 @@
+{
+  "name": "Baskin Platform DEV",
+  "short_name": "Platform DEV",
+  "description": "Versione di prova di Baskin Platform, per i tester. Gli eventi creati sono veri: usare nomi di prova.",
+  "lang": "it",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F2F4F6",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "icons/dev/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/dev/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/dev/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
