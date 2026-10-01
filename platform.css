@@ -179,3 +179,55 @@ a.btn.primary{color:var(--surface)}
 :root{--kb:0px}
 .pane-body{margin-bottom:var(--kb)}   /* l'area che scorre finisce sopra la tastiera (la barra in fondo resta sotto la tastiera) */
 .page .wrap{padding-bottom:calc(36px + var(--kb))}
+
+/* ---------- bozze e tornei (dalla 1.1) ---------- */
+.evcard.draft{border-style:dashed;border-color:var(--warn);background:color-mix(in srgb,var(--warn-soft) 35%,var(--surface))}
+.fhint{color:var(--muted);font-size:12.5px;line-height:1.4}
+.tform{display:flex;flex-direction:column;gap:14px}
+.tform .seg.tabs button{height:auto;min-height:42px;padding:4px 6px;line-height:1.2}
+.tform .seg.tabs button:disabled{opacity:.45}
+.stepper{display:flex;align-items:center;gap:6px}
+.stepper .btn{width:48px;height:46px;justify-content:center;font-size:22px;padding:0}
+.stepper b{min-width:44px;text-align:center;font-family:var(--display);font-size:28px}
+.tstep{flex-direction:row;align-items:center;justify-content:space-between;gap:12px;display:flex}
+.tprev{display:flex;flex-direction:column;gap:4px}
+.tprev .h3{margin:0 0 4px}
+.tprev .pv{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;padding:3px 0;border-top:1px solid var(--line)}
+.tprev .pv:first-of-type{border-top:0}
+.tprev .pv b{text-align:right}
+.tsteps{display:flex;flex-direction:column;gap:8px}
+.tstepl{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;min-height:44px}
+.tstepl b{display:block;font-size:16px}.tstepl small{display:block;color:var(--muted);font-size:13px;margin-top:2px;line-height:1.35}
+.tstepl svg{width:18px;height:18px;flex:none;color:var(--muted)}
+.tsi{width:28px;height:28px;flex:none;border-radius:50%;display:grid;place-items:center;font-weight:700}
+.tsi.ok{background:var(--ok-soft);color:var(--ok)}.tsi.todo{border:2px dashed var(--warn)}.tsi.nu{background:var(--sunk);color:var(--muted)}
+.tmiss{display:flex;flex-direction:column;gap:3px;font-size:14.5px}.tmiss span{color:var(--warn)}
+.tgrp{display:flex;flex-direction:column;gap:6px}
+.tgh{display:flex;align-items:center;gap:10px;padding:6px 0 2px}
+.tgh b{font-family:var(--display);font-size:20px;flex:1}
+.tgh .lnk{background:none;border:0;padding:6px 0;font:inherit;font-weight:700;font-size:13.5px;color:var(--focus)}
+.tm{display:flex;align-items:center;gap:10px;width:100%;text-align:left;font:inherit;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;min-height:48px}
+.tm .vs2{display:block;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.tm small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+.tm .tfase{display:block;font-weight:700;color:var(--muted);font-size:12px;margin:0 0 2px}
+.tm .miss{color:var(--warn);font-weight:700}
+.tm svg{width:16px;height:16px;flex:none;color:var(--muted)}
+.tm .tsc{font-size:20px}
+.tm.del{opacity:.6}.tm.del .vs2{text-decoration:line-through}
+.stand{width:100%;border-collapse:collapse;font-size:14.5px}
+.stand th{text-align:left;font-size:12px;color:var(--muted);padding:6px 6px;border-bottom:1px solid var(--line)}
+.stand td{padding:7px 6px;border-top:1px solid var(--line)}
+.stand td:nth-child(n+3),.stand th:nth-child(n+3){text-align:center;white-space:nowrap}
+.card .tw{overflow-x:auto;margin-top:8px}
+.tlock{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;background:var(--sunk);border-radius:12px;padding:10px 12px;font-size:14px}
+.tlock span{color:var(--muted)}
+.tsq{display:flex;flex-direction:column;gap:10px}
+.trow{flex-direction:row;align-items:center;gap:10px;display:flex}
+.trow label{width:84px;flex:none}
+.trow input{flex:1;min-width:0}
+.olist{display:flex;flex-direction:column;gap:2px;padding:6px 14px}
+.orow{display:flex;align-items:center;gap:12px;min-height:56px;border-top:1px solid var(--line)}
+.orow:first-child{border-top:0}
+.orow b{display:block}.orow small{display:block;color:var(--muted);font-size:12.5px}
+.avatar.sm{width:38px;height:38px;font-size:15px}
+button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer}
