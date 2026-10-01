@@ -235,3 +235,7 @@ button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer
 .evcard.stack{position:relative;margin-bottom:12px;box-shadow:0 6px 0 -1px var(--surface),0 6px 0 0 var(--line),0 12px 0 -2px var(--surface),0 12px 0 -1px var(--line)}
 .evcard.stack.draft{box-shadow:0 6px 0 -1px var(--surface),0 6px 0 0 var(--warn),0 12px 0 -2px var(--surface),0 12px 0 -1px var(--warn)}
 .evcard.stack .evd{background:var(--brand-soft)}
+.evd.rng{gap:0;padding:6px 0}
+.evd.rng b{font-size:22px;line-height:1}
+.evd.rng small{margin-top:1px}
+.evd.rng i{font-style:normal;color:var(--muted);font-weight:700;line-height:1;margin:2px 0}
