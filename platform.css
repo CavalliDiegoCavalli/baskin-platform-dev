@@ -309,3 +309,6 @@ a.maplink svg{color:var(--brand)}
 .twarn span{color:var(--ink)}.twarn b:first-child{color:var(--warn)}
 .tclash .hint,.twarn .hint{color:var(--muted);font-size:13px;margin-top:2px}
 .tm .tclx{font-weight:700;margin-top:3px}.tm .tclx.crit{color:var(--crit)}.tm .tclx.warn{color:var(--warn)}
+
+/* legenda della classifica (dalla 1.4.1) */
+.stleg{display:block;margin-top:8px;line-height:1.4}
