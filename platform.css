@@ -316,3 +316,35 @@ a.maplink svg{color:var(--brand)}
 /* aggiunta di un ruolo dalla finestra dell'account (dalla 1.6) */
 .addrole{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 14px;border-radius:12px;background:var(--brand-soft)}
 .addrole span{flex:1;min-width:180px;line-height:1.4}
+
+/* ---------- Utenti (dalla 1.7, admin e owner) ---------- */
+.nbadge{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;padding:0 5px;margin-left:6px;border-radius:999px;background:var(--crit);color:#fff;font-size:11.5px;font-weight:800;line-height:1;vertical-align:1px}
+.tbi{position:relative;display:inline-flex}
+.tbi .nbadge{position:absolute;top:-5px;left:15px;margin:0;min-width:17px;height:17px;font-size:10.5px}
+.ufilt{display:flex;flex-wrap:wrap;gap:8px}
+.ufb{height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.ufb b{color:var(--ink);margin-left:2px}
+.ufb[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.ufb[aria-pressed="true"] b{color:var(--surface)}
+.utab{padding:0;overflow:hidden}
+.urow{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;padding:14px 16px;border-top:1px solid var(--line);align-items:start}
+.urow:first-child{border-top:0}
+.uhead{display:none}
+.uc{display:flex;flex-direction:column;gap:3px;min-width:0;overflow-wrap:anywhere}
+.ue,.ur,.ua{grid-column:1/-1}
+.ue a{color:inherit}
+.ulb{font-size:11.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.umut{color:var(--muted);font-size:12.5px}
+.uchips{display:flex;flex-wrap:wrap;gap:5px}
+.uc>.chip{align-self:flex-start}
+@media (min-width:600px) and (max-width:1179px){.urow{grid-template-columns:1fr 1fr 1fr 1fr}.ue{grid-column:span 2}.ur,.us{grid-column:span 2}.ua{grid-column:1/-1}}
+.ua{flex-direction:row;flex-wrap:wrap;gap:8px;align-items:center}
+.ua .btn{min-height:40px}
+.udel{color:var(--crit)}
+@media (min-width:1180px){
+  .urow{grid-template-columns:minmax(80px,1fr) minmax(80px,1fr) minmax(170px,1.8fr) minmax(110px,1.2fr) 130px 290px;align-items:center}
+  .uhead{display:grid;background:var(--sunk);font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:10px 16px}
+  .ue,.ur,.ua{grid-column:auto}
+  .uc .ulb{display:none}
+  .ua{justify-content:flex-end}
+}
