@@ -251,10 +251,6 @@ button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer
 .shero h1 em{font-style:normal;color:#FFA94D}
 .shero p{margin:0;color:var(--sh-mut);font-size:16px;line-height:1.55;max-width:560px}
 .shero p b{color:var(--sh-ink)}
-.shero .arow{flex-wrap:wrap;gap:10px}
-.shero .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
-.sghost{background:transparent;color:var(--sh-ink);border-color:color-mix(in srgb,#fff 35%,transparent)}
-.sbadge{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;margin-left:6px;border-radius:99px;background:#fff;color:var(--brand);font-size:13px;font-weight:700}
 .shc{position:relative;z-index:1;min-width:0;display:none}
 @media (min-width:820px){.shc{display:block}}
 .court{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
@@ -266,11 +262,6 @@ button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer
 .court .hp.lo{transform-box:fill-box;transform-origin:center;transform:scale(.75)}
 @media (prefers-reduced-motion:no-preference){.shero .court .hp{animation:hpulse 2.6s ease-in-out infinite}.shero .court .hp.lt{animation-delay:.6s}}
 @keyframes hpulse{0%,100%{opacity:1}50%{opacity:.55}}
-.sstats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media (min-width:820px){.sstats{grid-template-columns:repeat(4,1fr)}}
-.sst{display:flex;flex-direction:column;gap:4px;padding:16px;border-radius:16px;background:var(--surface);border:1px solid var(--line);min-width:0}
-.sst b{font-family:var(--display);font-size:40px;line-height:1;color:var(--brand)}
-.sst span{color:var(--muted);line-height:1.35;font-size:14px}
 .swhys{display:grid;grid-template-columns:1fr;gap:10px}
 @media (min-width:640px){.swhys{grid-template-columns:repeat(2,1fr)}}
 @media (min-width:1100px){.swhys{grid-template-columns:repeat(4,1fr)}}
@@ -302,5 +293,3 @@ button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer
 .scta span{opacity:.92;line-height:1.45}
 .scta .btn.primary{background:#fff;color:var(--brand);border-color:#fff;align-self:flex-start}
 @media (min-width:700px){.scta{flex-direction:row;align-items:center;justify-content:space-between}.scta .btn.primary{align-self:center}}
-.ssrc{margin:0;color:var(--muted);font-size:13px}
-.ssrc a{color:var(--muted)}
