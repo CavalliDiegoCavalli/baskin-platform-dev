@@ -293,3 +293,15 @@ button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer
 .scta span{opacity:.92;line-height:1.45}
 .scta .btn.primary{background:#fff;color:var(--brand);border-color:#fff;align-self:flex-start}
 @media (min-width:700px){.scta{flex-direction:row;align-items:center;justify-content:space-between}.scta .btn.primary{align-self:center}}
+
+/* ---------- campo da gioco: suggerimenti degli indirizzi e collegamento alle mappe (dalla 1.3) ---------- */
+.aw{position:relative}
+.evmeta>a.maplink{display:flex;gap:8px;align-items:flex-start}
+.asug{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:20;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(0,0,0,.16);overflow:hidden;max-height:300px;overflow-y:auto}
+.asug button{display:flex;align-items:center;gap:10px;min-height:46px;padding:10px 12px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);text-align:left;font:inherit;line-height:1.3}
+.asug button:last-child{border-bottom:0}
+.asug button:hover,.asug button:focus-visible{background:var(--brand-soft)}
+.asug button svg{width:18px;height:18px;flex:none;color:var(--brand)}
+.asug .anote{padding:12px;color:var(--muted);font-size:14px}
+a.maplink{display:inline-flex;align-items:center;gap:6px;color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--brand) 60%,transparent);text-underline-offset:3px}
+a.maplink svg{color:var(--brand)}
