@@ -312,3 +312,7 @@ a.maplink svg{color:var(--brand)}
 
 /* legenda della classifica (dalla 1.4.1) */
 .stleg{display:block;margin-top:8px;line-height:1.4}
+
+/* aggiunta di un ruolo dalla finestra dell'account (dalla 1.6) */
+.addrole{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 14px;border-radius:12px;background:var(--brand-soft)}
+.addrole span{flex:1;min-width:180px;line-height:1.4}
