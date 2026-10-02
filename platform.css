@@ -301,3 +301,11 @@ a.maplink svg{color:var(--brand)}
 
 /* versione e copyright in chiaro, in fondo a ogni pagina (dalla 1.3.2) */
 .legal{margin:8px 0 0;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.4}
+
+/* partite sovrapposte o ravvicinate nel torneo (dalla 1.4) */
+.tclash{padding:12px 14px;border-radius:12px;background:var(--crit-soft);border:1px solid color-mix(in srgb,var(--crit) 35%,transparent)}
+.tclash span{color:var(--ink)}.tclash b:first-child{color:var(--crit)}
+.twarn{padding:12px 14px;border-radius:12px;background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent)}
+.twarn span{color:var(--ink)}.twarn b:first-child{color:var(--warn)}
+.tclash .hint,.twarn .hint{color:var(--muted);font-size:13px;margin-top:2px}
+.tm .tclx{font-weight:700;margin-top:3px}.tm .tclx.crit{color:var(--crit)}.tm .tclx.warn{color:var(--warn)}
