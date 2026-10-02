@@ -298,3 +298,6 @@ button.back{border:0;background:none;font:inherit;font-weight:700;cursor:pointer
 .evmeta>a.maplink{display:flex;gap:8px;align-items:flex-start}
 a.maplink{display:inline-flex;align-items:center;gap:6px;color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--brand) 60%,transparent);text-underline-offset:3px}
 a.maplink svg{color:var(--brand)}
+
+/* versione e copyright in chiaro, in fondo a ogni pagina (dalla 1.3.2) */
+.legal{margin:8px 0 0;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.4}
