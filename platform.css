@@ -429,20 +429,36 @@ a.maplink svg{color:var(--brand)}
 .rrowx{display:flex;align-items:center;gap:14px;align-self:stretch}
 a.alink2{color:var(--ink);text-decoration:none}
 
-/* ---------- Statistiche delle squadre nella pagina dell'evento (1.9) ---------- */
+/* ---------- Statistiche delle squadre nella pagina dell'evento (1.9): righe allineate tra le due colonne ---------- */
 .evst{display:flex;flex-direction:column;gap:12px}
 .evst .h3{margin:0}
-.esg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.esc{display:flex;flex-direction:column;gap:10px;min-width:0}
-.esc+.esc{border-left:1px solid var(--line);padding-left:14px}
+.esg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:0}
+.esh,.esv{padding:8px 12px 8px 0;min-width:0}
+.esb{padding:8px 0 8px 12px;border-left:1px solid var(--line)}
+.esh{display:flex;flex-direction:column;gap:4px;padding-top:0}
+.esh.esb{padding-top:0}
+.esh small{color:var(--muted);line-height:1.35}
 .esn{font-family:var(--display);font-size:20px;line-height:1.1;overflow-wrap:anywhere}
-.esr{display:flex;flex-direction:column;gap:3px;min-width:0}
-.esr>small{color:var(--muted);font-size:12px;font-weight:700;line-height:1.3}
-.esr>b{font-size:15px;line-height:1.35;overflow-wrap:anywhere}
-.esr em,.esrr em{font-style:normal;font-weight:400;color:var(--muted);font-size:13px}
+.esl{grid-column:1/-1;padding:9px 0 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.2px}
+.esv{font-size:15px;line-height:1.35;overflow-wrap:anywhere}
+.esv>b{font-size:15px}
+.esv em{font-style:normal;font-weight:400;color:var(--muted);font-size:13px}
+.esd{color:var(--muted)}
+.esnum{font-weight:700}
 .esu{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
 .esu li{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:14px;min-width:0}
 .esu li span:last-child{overflow-wrap:anywhere;min-width:0}
 .esu .chip{padding:1px 7px;font-size:11.5px}
-.esrr{display:block;font-size:14px;line-height:1.35;overflow-wrap:anywhere}
-.esrr i{font-style:normal;font-size:11.5px;font-weight:700;color:var(--muted);margin-right:6px}
+@media (min-width:700px){.esh,.esv{padding-right:20px}.esh.esb,.esv.esb{padding-left:20px;padding-right:0}}
+/* risultato finale sotto i nomi delle squadre */
+.card.vs .vfin{font-family:var(--display);font-size:56px;line-height:1;color:var(--muted);font-weight:700}
+.card.vs .vfin.win{color:var(--ink)}
+.card.vs .vfl{align-self:center;color:var(--muted);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;max-width:70px;line-height:1.2}
+/* liberatoria dell'atleta */
+.libc{display:flex;flex-direction:column;gap:12px}
+.libc.ok{border-color:var(--ok)}
+.libc.ok .rico{background:var(--ok-soft);color:var(--ok)}
+.libsteps{margin:0;padding-left:20px;color:var(--muted);line-height:1.5;font-size:14px}
+.libc label.btn{cursor:pointer}
+.libflag{padding:10px 12px;border:1px solid var(--line);border-radius:12px}
+.libflag small{color:var(--muted)}
