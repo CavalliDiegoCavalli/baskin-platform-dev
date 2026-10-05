@@ -428,3 +428,21 @@ a.maplink svg{color:var(--brand)}
 .stmini.col{flex-direction:column;gap:6px}
 .rrowx{display:flex;align-items:center;gap:14px;align-self:stretch}
 a.alink2{color:var(--ink);text-decoration:none}
+
+/* ---------- Statistiche delle squadre nella pagina dell'evento (1.9) ---------- */
+.evst{display:flex;flex-direction:column;gap:12px}
+.evst .h3{margin:0}
+.esg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.esc{display:flex;flex-direction:column;gap:10px;min-width:0}
+.esc+.esc{border-left:1px solid var(--line);padding-left:14px}
+.esn{font-family:var(--display);font-size:20px;line-height:1.1;overflow-wrap:anywhere}
+.esr{display:flex;flex-direction:column;gap:3px;min-width:0}
+.esr>small{color:var(--muted);font-size:12px;font-weight:700;line-height:1.3}
+.esr>b{font-size:15px;line-height:1.35;overflow-wrap:anywhere}
+.esr em,.esrr em{font-style:normal;font-weight:400;color:var(--muted);font-size:13px}
+.esu{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.esu li{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:14px;min-width:0}
+.esu li span:last-child{overflow-wrap:anywhere;min-width:0}
+.esu .chip{padding:1px 7px;font-size:11.5px}
+.esrr{display:block;font-size:14px;line-height:1.35;overflow-wrap:anywhere}
+.esrr i{font-style:normal;font-size:11.5px;font-weight:700;color:var(--muted);margin-right:6px}
