@@ -462,3 +462,35 @@ a.alink2{color:var(--ink);text-decoration:none}
 .libc label.btn{cursor:pointer}
 .libflag{padding:10px 12px;border:1px solid var(--line);border-radius:12px}
 .libflag small{color:var(--muted)}
+/* Campionati (1.11): gironi e playoff nello schema, schede, serie dei playoff, classifica; sezioni territoriali */
+.cgir{display:flex;flex-direction:column;gap:12px}
+.cgh{display:flex;align-items:flex-end;gap:10px}
+.cgh .field{min-width:0}
+.cgrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.cgrow .flabel{margin:0}
+.cchips{display:flex;flex-wrap:wrap;gap:8px}
+.chipb{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-weight:700;font-size:14px;min-height:40px}
+.chipb[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.chipb:disabled{opacity:.4}
+.crnds{display:flex;flex-direction:column;gap:8px}
+.crnd{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.crnd>span{font-weight:700;min-width:140px}
+.crnd .seg.tabs{flex:1;min-width:220px;width:auto}
+.cpts .field input{max-width:120px}
+.ctabs{flex-wrap:wrap}
+.ctabs button{flex:1 1 auto;min-width:96px;padding:0 12px}
+.cstand tr.cq td:first-child{box-shadow:inset 3px 0 0 var(--ok)}
+.cstand td small{font-weight:400}
+.cseeds{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:14px}
+.cseeds b{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:6px;background:var(--sunk);font-size:12.5px;margin-right:4px}
+.cbye{display:block;padding:2px 0 4px}
+.cser{display:flex;flex-direction:column;gap:6px;padding:10px;border-radius:14px;background:var(--sunk)}
+.csh{display:flex;align-items:center;gap:10px;padding:0 4px}
+.csh small{display:block;color:var(--muted);font-size:12.5px}
+.csh small.ok{color:var(--ok);font-weight:700}
+.csh b{overflow-wrap:anywhere}
+.csh .num{font-size:22px}
+.sezadd{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.sezadd .field{min-width:200px}
+.sezl{display:flex;flex-direction:column;gap:8px}
+.sezl .tm{flex-wrap:wrap}
