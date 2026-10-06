@@ -494,3 +494,5 @@ a.alink2{color:var(--ink);text-decoration:none}
 .sezadd .field{min-width:200px}
 .sezl{display:flex;flex-direction:column;gap:8px}
 .sezl .tm{flex-wrap:wrap}
+.cstand tr.cqo td:first-child{box-shadow:inset 3px 0 0 var(--warn)}
+.cgir.cout{border-color:var(--warn)}
