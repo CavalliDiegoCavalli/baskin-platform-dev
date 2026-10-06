@@ -509,3 +509,17 @@ a.alink2{color:var(--ink);text-decoration:none}
 .dndh{margin:0 0 6px;font-size:13.5px}
 .card.vs .dteam{cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;border-radius:8px;padding:2px 6px;margin:0 -6px;background:linear-gradient(var(--sunk),var(--sunk)) bottom/100% 2px no-repeat}
 .card.vs .dteam.dz-on{background:var(--ok-soft);outline:2px solid var(--ok)}
+/* campionati nell'elenco Eventi (1.12): card verdi gara per gara; collegamento dalla gara al torneo o al campionato */
+.evcard.camp .evd{background:var(--ok-soft)}
+.evcard.camp .evd b{color:var(--ok)}
+.evcard.stack.camp .evd{background:var(--ok-soft)}
+.evcard .evf{display:block;color:var(--muted);font-size:12.5px;font-weight:700;margin-top:1px}
+.tstepl.tlink .tsi{background:var(--brand-soft);color:var(--brand,var(--ink))}
+.tstepl.tlink.camp .tsi{background:var(--ok-soft);color:var(--ok)}
+.tstepl.tlink .tsi svg{width:16px;height:16px}
+.ctog{margin-top:2px}
+.cgcal{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:10px}
+.cgcal .fgrid{gap:10px}
+.chipb.on{background:var(--sunk);border-color:var(--line);color:var(--ink)}
+.cnoadd{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap}
+.cnoadd input{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:var(--surface);color:var(--ink);font:inherit}
