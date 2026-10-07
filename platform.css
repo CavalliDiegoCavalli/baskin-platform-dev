@@ -524,3 +524,33 @@ a.alink2{color:var(--ink);text-decoration:none}
 .chipb.on{background:var(--sunk);border-color:var(--line);color:var(--ink)}
 .cnoadd{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap}
 .cnoadd input{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:var(--surface);color:var(--ink);font:inherit}
+
+/* Loghi delle squadre e pagina della squadra nei colori del logo (1.14) */
+.evd.sqd.lg{background:#fff;padding:5px;border:1px solid var(--line)}
+.evd.sqd.lg img{width:100%;height:46px;object-fit:contain;display:block}
+.tnm{display:inline-flex;align-items:center;gap:6px;vertical-align:middle;max-width:100%}
+.tlogo{width:22px;height:22px;object-fit:contain;flex:none;border-radius:5px;background:#fff}
+.vs .vlogo{width:64px;height:64px;object-fit:contain;align-self:center;background:#fff;border-radius:14px;padding:5px;border:1px solid var(--line)}
+.lgbox{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none;padding:3px}
+.lgbox img{max-width:100%;max-height:100%;object-fit:contain}
+.tcsw{display:flex;align-items:center;gap:8px;margin-top:10px}
+.tcsw span{width:26px;height:26px;border-radius:8px;border:1px solid var(--line)}
+.tcsw small{color:var(--muted)}
+.logoc .arow{margin-top:12px}
+.sqpage{display:flex;flex-direction:column;gap:18px}
+.sqhero{flex-direction:row;align-items:center;gap:16px}
+.lgbig{width:96px;height:96px;border-radius:20px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;padding:8px;flex:none}
+.lgbig img{max-width:100%;max-height:100%;object-fit:contain}
+.sqpage.themed .sqhero{background:var(--tc1);color:var(--tc1-tx);border-radius:18px;padding:18px;border-bottom:6px solid var(--tc2)}
+.sqpage.themed .sqhero .lgbig{border-color:transparent;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.sqpage.themed .sqhero .chip{background:rgba(255,255,255,.22);color:inherit;border-color:transparent}
+.sqpage.themed .sqhero .evmeta,.sqpage.themed .sqhero .evmeta *{color:inherit;text-decoration-color:currentColor;border-color:currentColor}
+.sqpage.themed .btn.primary{background:var(--tc1);color:var(--tc1-tx);border-color:var(--tc1)}
+.sqpage.themed .h2{box-shadow:inset 4px 0 0 var(--tc1);padding-left:10px}
+.sqpage.themed .seg button[aria-pressed="true"]{background:var(--tc1);color:var(--tc1-tx)}
+@media (max-width:560px){.lgbig{width:72px;height:72px;border-radius:16px;padding:6px}.sqhero{gap:12px}.sqpage.themed .sqhero{padding:14px}}
+.svlist{display:flex;flex-direction:column;gap:8px;max-height:420px;overflow:auto}
+.svrow{width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.svrow small{display:block;color:var(--muted);font-size:12.5px}
+.svrow[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.card.vs .vt{align-self:stretch;justify-content:flex-end}
