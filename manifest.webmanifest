@@ -1,7 +1,7 @@
 {
-  "name": "Baskin Platform DEV",
+  "name": "Basketin Platform DEV",
   "short_name": "Platform DEV",
-  "description": "Versione di prova di Baskin Platform, per i tester. Gli eventi creati sono veri: usare nomi di prova.",
+  "description": "Versione di prova di Basketin Platform, per i tester. Gli eventi creati sono veri: usare nomi di prova.",
   "lang": "it",
   "id": "./",
   "start_url": "./",
