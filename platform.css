@@ -110,6 +110,7 @@ a.btn.primary{color:var(--surface)}
 .rico svg{width:24px;height:24px}
 .rsc{font-size:34px;font-weight:700}
 .tabhint{margin:0;font-size:13px;color:var(--muted);display:none}
+.btn.pcoff{white-space:normal;height:auto;min-height:52px;padding-top:10px;padding-bottom:10px;line-height:1.25;text-align:center;justify-content:center}   /* 1.13: da PC/Mac il referto non si compila */
 @media (max-width:760px){.tabhint{display:block}}
 .btn.go{color:#fff}
 .rdet{margin-top:12px}
