@@ -951,3 +951,22 @@ a.alink2{color:var(--ink);text-decoration:none}
   .sxtbl.sxstf td.sxtn{grid-column:1 / -1}
 }
 @media (max-width:420px){.sxtbl.sxstf tr{grid-template-columns:minmax(0,1fr)}}
+/* Pagina della squadra (Diego, 2026-10-08): visita medica su fondo RAG, statistiche principali su una riga */
+.rag{display:inline-block;padding:3px 10px;border-radius:999px;font-weight:700;font-size:13px;font-family:var(--mono);font-stretch:normal;white-space:nowrap}
+.rag-g{background:var(--ok-soft);color:var(--ok)}
+.rag-a{background:var(--warn-soft);color:var(--warn)}
+.rag-r{background:var(--crit-soft);color:var(--crit)}
+.sqnums{display:flex;flex-direction:column;gap:12px}
+.sqnr{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center}
+.sqnr>div{flex:1 1 130px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.sqnr>div.sqrad{flex:0 0 auto;align-items:flex-start}
+.sqrad .radar{width:112px;height:112px}
+.sqnums .sqsl{align-self:flex-start}
+@media (max-width:980px){.atmain td[data-l="Ruolo"],.atmain td[data-l="Genere"]{flex-direction:row;align-items:baseline;gap:6px}}
+.sqnums>.sqnr{flex-direction:row;align-items:flex-start;text-align:left}
+.sqnums>.sqnr>div{text-align:left}
+#sqmlist .orow{flex-wrap:wrap}
+#sqmlist .orow>.grow{flex:1 1 140px;min-width:0}
+@media (max-width:980px){.atmain:not(.ro) td.atnum{grid-row:span 4}}
+@media (max-width:420px){.atmain:not(.ro) td.atnum{grid-row:span 7}}
+.sqnums .sqsl{display:inline-flex;align-items:center;gap:6px}.sqnums .sqsl svg{width:16px;height:16px;flex:none}
