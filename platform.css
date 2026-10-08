@@ -916,7 +916,6 @@ a.alink2{color:var(--ink);text-decoration:none}
 .sxsig .sgpad small{font-weight:400;color:var(--muted)}
 .sxsig .sgdone{width:100%;max-width:420px}
 .sxyn .seg{max-width:220px}
-.sxpre{min-width:min(100%,320px)}
 @media (max-width:560px){.sxsteps{grid-template-columns:1fr}.sxsc{grid-template-columns:1fr}}
 .sxl .orow{flex-wrap:wrap}
 .sxl .orow>.grow{flex:1 1 180px;min-width:0}
@@ -933,3 +932,22 @@ a.alink2{color:var(--ink);text-decoration:none}
   .sxtbl .chip{white-space:normal}
 }
 @media (max-width:420px){.sxtbl tr{grid-template-columns:44px minmax(0,1fr)}.sxtbl td.atnum{grid-row:span 6}}
+/* Campi cliccabili di Staff e Atleti (Diego, 2026-10-08): ognuno apre la sua finestra di modifica */
+.sxcell{display:flex;align-items:center;gap:8px;width:100%;min-height:40px;padding:6px 8px;margin:-6px -8px;border:1px solid transparent;border-radius:10px;background:none;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.sxcell:hover,.sxcell:focus-visible{border-color:var(--line);background:var(--sunk)}
+.sxcv{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.sxcv small{color:var(--muted);font-size:12.5px}
+.sxed{flex:none;width:16px;height:16px;color:var(--muted);opacity:.55}
+.sxed svg{width:16px;height:16px;display:block}
+.sxcell:hover .sxed{opacity:1;color:var(--primary)}
+.sxmini .sxcell{margin:0;padding:4px 8px;min-height:34px}
+.sxtotr{display:flex;justify-content:space-between;align-items:baseline;padding:10px 4px 0;border-top:2px solid var(--line);font-size:15px}
+.sxtotr b{font-size:20px}
+.sxsel{cursor:pointer}
+.sxsel input{width:20px;height:20px;flex:none}
+@media (max-width:980px){
+  .sxtbl td{width:100%}
+  .sxtbl.sxstf tr{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sxtbl.sxstf td.sxtn{grid-column:1 / -1}
+}
+@media (max-width:420px){.sxtbl.sxstf tr{grid-template-columns:minmax(0,1fr)}}
