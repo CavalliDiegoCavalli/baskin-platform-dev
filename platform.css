@@ -805,7 +805,7 @@ a.alink2{color:var(--ink);text-decoration:none}
 .sqprev .sqpage{padding:16px}
 .sqprev .sqpage>.sqdeco{left:0;width:100%;top:0;bottom:0}
 .sqprev .sqhero .h1{font-size:30px}.sqprev .sqhero .lgbig{width:84px;height:84px}
-.prow{display:flex;gap:10px;padding:6px 0;border-top:1px solid var(--sunk)}.prow b{font-family:var(--mono);font-stretch:normal}
+.sqprow{display:flex;gap:10px;padding:6px 0;border-top:1px solid var(--sunk)}.sqprow b{font-family:var(--mono);font-stretch:normal}
 @media (min-width:980px){.cside.sqsl{max-width:420px}}
 
 /* configurazione delle bozze (1.16) */
