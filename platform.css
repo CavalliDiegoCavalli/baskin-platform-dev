@@ -864,3 +864,72 @@ a.alink2{color:var(--ink);text-decoration:none}
 .court .cl,.court .ca{stroke:#FFEFD9}
 .court .hp.lt{fill:var(--bk-orange)}
 .lnk{color:var(--primary)}
+
+/* Segreteria della squadra (1.19): prefisso sx, diverso dalle classi del motore del referto (styles.css) */
+.sxnav{display:flex;flex-wrap:wrap;gap:6px}
+.sxnav a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font-weight:700;font-size:14px;text-decoration:none}
+.sxnav a.on{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.sxdot{min-width:20px;height:20px;border-radius:999px;background:var(--warn);color:#fff;font-size:11.5px;display:inline-grid;place-items:center;padding:0 5px}
+.sxmock{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:12px;border:2px dashed var(--primary);background:var(--primary-soft);line-height:1.45;font-size:14px;color:var(--ink)}
+.sxmock .chip{flex:none;margin-top:1px;background:var(--primary);color:#fff}
+.sxreqs{display:flex;flex-direction:column}
+.sxreq{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--sunk);flex-wrap:wrap}
+.sxreqs .sxreq:first-child{border-top:0}
+.sxreq .ci{flex:none;width:28px;height:28px;border-radius:999px;display:grid;place-items:center;font-weight:800;background:var(--crit-soft);color:var(--crit)}
+.sxreq.ok .ci{background:var(--ok-soft);color:var(--ok)}
+.sxreq.warn .ci{background:var(--warn-soft);color:var(--warn)}
+.sxreq>.ci+.grow{flex:1 1 220px;min-width:0}
+.sxreq small{display:block;color:var(--muted);line-height:1.4;margin-top:2px}
+.sxsc{display:grid;grid-template-columns:88px minmax(0,1fr);gap:8px;padding:7px 0;border-top:1px solid var(--sunk);font-size:13.5px;line-height:1.4}
+.sxsc .num{font-weight:700;color:var(--warn)}
+.sxsc.crit .num{color:var(--crit)}
+.side .lnk{display:block;padding:4px 0}
+.sxdocs{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.sxdoc{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.sxdoc.ok{border-color:color-mix(in srgb,var(--ok) 40%,var(--line))}
+.sxdoc.ok .rico{background:var(--ok-soft);color:var(--ok)}
+.sxdoc>.grow{flex:1 1 200px;min-width:0}
+.sxdoc small{display:block;color:var(--muted);overflow-wrap:anywhere}
+.sxdocb{display:flex;gap:8px;flex-wrap:wrap}
+.sxq{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.sxq .rchk small{display:block;color:var(--muted)}
+.sxtbl td{font-size:14px}
+.sxat{text-align:left;font-size:15px;padding:0}
+.sxmini{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 12px;align-items:center;font-size:14px;margin-top:6px}
+.sxmini>span:nth-child(odd){color:var(--muted)}
+.sxmini .chip{justify-self:start;white-space:normal}
+.sxord td:first-child{width:36px}
+.sxord input[type=checkbox]{width:20px;height:20px}
+.sxord .sxe{text-align:right;white-space:nowrap}
+.sxord tfoot td{border-top:2px solid var(--line);padding-top:10px}
+.sxko td{background:color-mix(in srgb,var(--warn-soft) 55%,transparent)}
+.sxo{display:flex;flex-direction:column;gap:10px}
+.sxann{opacity:.6}
+.sxtot{font-size:22px}
+.sxsteps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.sxst{display:flex;flex-direction:column;gap:2px;padding-top:10px;border-top:4px solid var(--sunk);font-size:13px}
+.sxst.on{border-top-color:var(--ok)}
+.sxst small{color:var(--muted)}
+.sxst i{display:none}
+.sxsig{display:flex}
+.sxsig .sgpad{width:100%;max-width:420px}
+.sxsig .sgpad small{font-weight:400;color:var(--muted)}
+.sxsig .sgdone{width:100%;max-width:420px}
+.sxyn .seg{max-width:220px}
+.sxpre{min-width:min(100%,320px)}
+@media (max-width:560px){.sxsteps{grid-template-columns:1fr}.sxsc{grid-template-columns:1fr}}
+.sxl .orow{flex-wrap:wrap}
+.sxl .orow>.grow{flex:1 1 180px;min-width:0}
+.sxl .orow .chip{white-space:normal}
+/* tabella degli atleti della segreteria: a schede sugli schermi stretti, senza scorrimento orizzontale */
+@media (max-width:980px){
+  .sxtbl thead{display:none}
+  .sxtbl,.sxtbl tbody{display:block}
+  .sxtbl tr{display:grid;grid-template-columns:56px repeat(2,minmax(0,1fr));gap:6px 10px;padding:12px 0;border-bottom:1px solid var(--sunk)}
+  .sxtbl td{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:0;border:0}
+  .sxtbl td.atnum{grid-row:span 3;display:block}
+  .sxtbl td.sxtn{grid-column:2 / -1}
+  .sxtbl td[data-l]::before{content:attr(data-l);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .sxtbl .chip{white-space:normal}
+}
+@media (max-width:420px){.sxtbl tr{grid-template-columns:44px minmax(0,1fr)}.sxtbl td.atnum{grid-row:span 6}}
